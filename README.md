@@ -9,7 +9,7 @@ To run:
 - npx react-app-rewired start
 
 # Note
-Frontend base taken from: Modern UI/UX GPT-3 , https://gpt3-jsm.com/
+Frontend base taken from: Modern UI/UX GPT-3 , https://www.youtube.com/watch?v=LMagNcngvcU
 
 # License
 Begin license text.
