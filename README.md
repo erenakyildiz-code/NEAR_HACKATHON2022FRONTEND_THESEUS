@@ -1,2 +1,7 @@
-# NEAR_HACKATHON2022FRONTEND_THESEUS
-Frontend
+#Frontend
+
+To run:
+
+npm i
+
+npx react-app-rewired start
