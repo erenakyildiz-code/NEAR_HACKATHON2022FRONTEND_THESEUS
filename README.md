@@ -6,4 +6,4 @@ To run
 
 
 Notes:
-Frontend base taken from: Modern UI/UX GPT-3
+Frontend base taken from: Modern UI/UX GPT-3 , https://gpt3-jsm.com/
