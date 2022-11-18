@@ -11,7 +11,7 @@ To run:
 # Note
 Frontend base taken from: Modern UI/UX GPT-3 , https://gpt3-jsm.com/
 
-# Licence
+# License
 Begin license text.
 Copyright 2022 eren akyıldız
 
