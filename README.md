@@ -1,9 +1,12 @@
-# Frontend 
+# Frontend
 
-To run
-1-  npm i
-2-  npx react-app-rewired start
+The frontend has a lot of complex components and may take a while to load for some computers.
 
+To run:
+----------
+- npm i
+- export NODE_OPTIONS=--openssl-legacy-provider
+- npx react-app-rewired start
 
-Notes:
+# Note
 Frontend base taken from: Modern UI/UX GPT-3 , https://gpt3-jsm.com/
