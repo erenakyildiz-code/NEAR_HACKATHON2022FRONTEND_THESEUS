@@ -4,13 +4,14 @@
     flex-direction: column;
     border-radius: 10px;
     height: 100%;
-    --pink: #57388f;
-    --blue: #224650;
+    --purple: #db07d1;
+    --pink: #f2056f;
+    --blue: #61dafb;
     background: linear-gradient(
-        60deg,
-        var(--blue) 0%,
-        #252050 30%,
-        var(--pink) 70%
+        360deg,
+        var(--blue) 10%,
+        var(--purple) 50%,
+        var(--pink) 90%
       );
       margin-right: 2rem;
       border-radius: 10px;

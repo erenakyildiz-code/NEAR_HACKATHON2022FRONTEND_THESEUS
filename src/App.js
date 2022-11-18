@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Footer, Blog, Possibility, Features, WhatGPT3, Header } from './containers';
+import { Footer, Blog, Possibility, Features, WhatGPT3, Header ,Admin} from './containers';
 import { CTA, Brand, Navbar } from './components';
 import { motion } from "framer-motion";
 
@@ -19,6 +19,8 @@ const App = ({ isSignedIn, helloNEAR, wallet }) => {
     <WhatGPT3 />
     <Possibility></Possibility>
     <Blog isSignedIn={isSignedIn} helloNEAR={helloNEAR} wallet={wallet}/>
+    
+    <Admin isSignedIn={isSignedIn} helloNEAR={helloNEAR} wallet={wallet} ></Admin>
   </motion.div>
 );}
 

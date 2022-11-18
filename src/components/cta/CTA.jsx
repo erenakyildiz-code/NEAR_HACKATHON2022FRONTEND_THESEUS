@@ -67,14 +67,14 @@ function CTA({ isSignedIn, helloNEAR, wallet }){
         
         data: [valueFromBlockchain,totalValueFromBlockchain - valueFromBlockchain],
         backgroundColor: [
-          'rgba(255, 99, 132, 0.2)',
-          'rgba(54, 162, 235, 0.2)',
+          'rgba(255, 255, 255, 0.2)',
+          'rgba(0, 0, 0, 0.2)',
         ],
         borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
+          '#ffffff',
+          '#000000',
         ],
-        borderWidth: 1,
+        borderWidth: 3,
       },
 
     ],
@@ -109,18 +109,18 @@ function CTA({ isSignedIn, helloNEAR, wallet }){
       </form>
         <div className='gpt3__cta-buttons'>
           <motion.div 
-        initial={{  backgroundColor: '#8400ff' }}
+        initial={{  backgroundColor: '#db07d1' }}
         whileHover={{
-          backgroundColor: '#af4dff'
+          backgroundColor: '#61dafb21'
         }}
         onTap={withdraw}
         type="submit"
         transition={{ scale: { type: 'spring', stiffness: 500 } }}className='gpt3__cta-inputbut1'
       >Withdraw</motion.div>
             <motion.div 
-        initial={{  backgroundColor: '#8400ff' }}
+        initial={{  backgroundColor: '#db07d1' }}
         whileHover={{
-          backgroundColor: '#af4dff'
+          backgroundColor: '#61dafb21'
         }}
         type="submit"
         onTap={deposit}
@@ -131,9 +131,9 @@ function CTA({ isSignedIn, helloNEAR, wallet }){
         
       </div>
       <motion.div 
-        initial={{  backgroundColor: '#8400ff' }}
+        initial={{  backgroundColor: '#db07d1' }}
         whileHover={{
-          backgroundColor: '#af4dff'
+          backgroundColor: '#61dafb21'
         }}
         onTap={purchase_alloc}
         transition={{ scale: { type: 'spring', stiffness: 500 } }}className='gpt3__cta-inputbut3'

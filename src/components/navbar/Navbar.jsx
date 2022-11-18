@@ -12,6 +12,8 @@ const Navbar = ({ isSignedIn, helloNEAR, wallet }) => {
   const mouseY = useMotionValue(0);
   const [isHover2, setIsHover2] = useState(false);
   const [isHover, setIsHover] = useState(false);
+  
+  const [isHover3, setIsHover3] = useState(false);
   const resetMousePosition = () => {
     mouseX.set(0);
     mouseY.set(0);
@@ -56,6 +58,23 @@ const Navbar = ({ isSignedIn, helloNEAR, wallet }) => {
           press: { scale: 1.1 }
         }}>
           <p><a href="#blog">App</a></p></motion.div>
+          <motion.div 
+           onHoverStart={() => {
+            resetMousePosition();
+            setIsHover3(true);
+          }}
+          onHoverEnd={() => {
+            resetMousePosition();
+            setIsHover3(false);
+          }}
+          initial={false}
+          animate={isHover3 ? "hover" : "rest"}
+          variants={{
+          rest: { scale: 1 },
+          hover: { scale: 1.2 },
+          press: { scale: 1.1 }
+        }}>
+          <p><a href="#admin">Admin</a></p></motion.div>
         </div>
       </div>
       <div className="gpt3__navbar-sign">
@@ -72,6 +91,7 @@ const Navbar = ({ isSignedIn, helloNEAR, wallet }) => {
             <p><a href="#home">Home</a></p>
             <p><a href="#wgpt3">What is theseus?</a></p>
             <p><a href="#blog">Current projects</a></p>
+            <p><a href="#admin">Admin panel</a></p>
           </div>
         </div>
         )}

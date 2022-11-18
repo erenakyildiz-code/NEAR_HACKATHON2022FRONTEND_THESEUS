@@ -80,6 +80,36 @@ export class Wallet {
     });
     return JSON.parse(Buffer.from(res.result).toString());
   }
+  async batch({ contractId, method, args = [{}], gas = THIRTY_TGAS, deposit = NO_DEPOSIT }) {
+    // Sign a transaction with the "FunctionCall" action
+    return await this.wallet.signAndSendTransaction({
+      signerId: this.accountId,
+      receiverId: contractId,
+      actions: [
+        
+        {
+          type: 'FunctionCall',
+          params: {
+            methodName: method[0],
+            args: args[0],
+            gas,
+            deposit: deposit[0],
+          },
+        },{
+          type: 'FunctionCall',
+          params: {
+            methodName: method[1],
+            args: args[1],
+            gas,
+            deposit: deposit[1],
+          },
+          
+        }
+      ],
+    });
+
+   
+  }
 
   // Call a method that changes the contract's state
   async callMethod({ contractId, method, args = {}, gas = THIRTY_TGAS, deposit = NO_DEPOSIT }) {
@@ -99,6 +129,8 @@ export class Wallet {
         },
       ],
     });
+
+   
   }
 
   // Get transaction result from the network

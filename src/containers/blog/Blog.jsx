@@ -50,8 +50,7 @@ const Blog = ({isSignedIn, helloNEAR, wallet}) => {
           </div>
           <div className="gpt3__blog-container_groupB">
             <Article imgUrl={blog02} date="2022" text="ft.examples.testnet" val={(100* balances / total)} alloc={alloc} />
-            <Article imgUrl={blog03} date="2022" text="dev-1668713934929-97276145600233" val={(100* balances2 / total2)} alloc={alloc}/>
-          </div>
+                      </div>
         </div>
       </div>
     );
@@ -64,9 +63,8 @@ const Blog = ({isSignedIn, helloNEAR, wallet}) => {
         </div>
         <div className="gpt3__blog-container">
           <div className="gpt3__blog-container_groupB">
-            <Article imgUrl={blog02} date="Nov 11, 2022" text="Erencoin" val="17"/>
-            <Article imgUrl={blog03} date="Oct 21, 2022" text="Somethingtoken" val="28"/>
-          </div>
+          <Article imgUrl={blog02} date="2022" text="ft.examples.testnet" val={(100* balances / total)} alloc={alloc} />
+                     </div>
         </div>
       </div>
     );

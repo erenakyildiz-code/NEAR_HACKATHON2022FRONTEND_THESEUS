@@ -21,14 +21,21 @@ export class HelloNEAR {
     return await this.wallet.callMethod({ contractId: this.contractId, method: 'withdraw_balance', args:{amount: amountx} });
   }
   async admin_stake(){
-
+    accountid = "ft.examples.testnet";
+    return await this.wallet.callMethod({contractId:this.contractId,method: 'stake', args:{pool: accountid}});
+  }
+  async admin_unstake(){
+    accountid = "ft.examples.testnet";
+    return await this.wallet.callMethod({contractId:this.contractId,method: 'unstake', args:{pool: accountid}});
   }
   async purchase_all(tokenID){
     return await this.wallet.callMethod({contractId: this.contractId,method: 'purchase', args:{token_account: tokenID}});
   }
-  async start_launch(tokenID, amountToSell){
-    return await this.wallet.callMethod({contractId: this.contractId,method: 'start_launch', args:{account_of_token: tokenID, amount_to_sell:amountToSell}})
-
+  async start_launch_met1(tokenID, amountToSell){
+    await this.wallet.batch({contractId: tokenID,method: ['storage_deposit','ft_mint'], args: [{account_id: this.contractId}, {receiver_id: this.contractId, amount: amountToSell}],deposit: ["1250000000000000000000","100000000000000010000000"]})
+  }
+  async start_launch_met2(tokenID, amountToSell){
+    await this.wallet.callMethod({contractId: this.contractId,method: 'start_launch', args:{account_of_token: tokenID, amount_to_sell:amountToSell}})
   }
   async get_launch(x){
     return await this.wallet.viewMethod({contractId: this.contractId, method: 'get_tokens',  args:{account: x}});
