@@ -5,3 +5,5 @@ export { default as Header } from './header/Header';
 export { default as Possibility } from './possibility/Possibility';
 export { default as WhatGPT3 } from './whatGPT3/WhatGPT3';
 export { default as Admin } from './admin/admin';
+export { default as UserForm} from './articleCalculator/ContractForm';
+export { default as FizzBuzz} from './buzzfeedclone/FizzBuzz';

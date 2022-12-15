@@ -1,0 +1,229 @@
+.form-container{
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    flex-direction: column;
+    background: rgb(240, 240, 240);
+    
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.bottomFormCard{
+    
+    padding-bottom: 2rem;
+}
+.form-creator{
+    
+  color: rgb(0, 0, 0);
+  padding-bottom: 1rem;
+  font-family: 'Manrope', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  position: relative;
+  text-align: flex-start;
+  align-items: center;
+}
+.explainer{
+    color: rgb(0, 0, 0);
+    font-family: 'Manrope', sans-serif;
+    text-align:  flex-start;
+    font-size: 14px;
+    padding-bottom: 1rem;
+
+}
+.explainer2{
+    color: rgb(0, 0, 0);
+    font-family: 'Manrope', sans-serif;
+    text-align:  flex-start;
+    font-size: 20px;
+    padding: 1rem;
+}
+.explainer3{
+    color: rgb(0, 0, 0);
+    font-family: 'Manrope', sans-serif;
+    text-align:  flex-start;
+    font-size: 16px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+.gpt3__admin {
+    display: flex;
+    flex-direction: row;
+}
+.bottomFormTotal{
+    padding: 2vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.gpt3__admin-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-right: 2rem;
+}
+.gpt3__admin-image img {
+    width: 100%;
+    height: 100%;
+}
+.gpt3__admin-rows {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.flexBoxFix{
+    flex-direction: row;
+}
+.gpt3__admin-cols-row{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 225px;
+}
+.gpt3__admin-cols-row button{
+    width: 175px;
+    height: 100px;
+    margin-right: 100px;
+    
+
+  appearance: none;
+  cursor: pointer;
+  background-color: #4f90ec00;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border-color: #ff71ff;
+  outline: none;
+  
+  font-family: 'Manrope', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  position: relative;
+  text-align: center;
+  align-items: center;
+}
+.gpt3__admin-rows-explain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1000px;
+}
+.gpt3__admin-content {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.gpt3__admin-content h4 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #71E5FF;
+}
+
+.gpt3__admin-content h4:last-child {
+    color: #ff8A71;
+}
+.gpt3__admin-content h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    margin-bottom: 50px;
+}
+
+.gpt3__admin-content p {
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 950px) {
+    .gpt3__admin {
+        flex-direction: column;
+    }
+    .gpt3__admin-rows-explain{
+        display: flex;
+        flex-direction: column;
+        justify-content:  flex-start;
+        width: 400px;
+    }
+    
+    .gpt3__admin-cols-row{
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 1000px;
+    }
+    .gpt3__admin-cols-row button{
+        width: 300px;
+        height: 100px;
+        
+    
+      appearance: none;
+      cursor: pointer;
+      background-color: #4f90ec00;
+      color: rgb(255, 255, 255);
+      border-radius: 5px;
+      border-color: #ff71ff;
+      outline: none;
+      
+      font-family: 'Manrope', sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      align-self: center;
+      position: relative;
+      text-align: center;
+      align-items: center;
+    }
+    .gpt3__admin-image {
+        margin: 1rem 0;
+    }
+
+    .gpt3__admin-image img {
+        width: unset;
+        height: unset;
+    }
+
+    .gpt3__admin-content {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .bottomFormTotal{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+    }
+    .bottomFormCard{
+        margin-top: 2vh;
+        
+        padding-bottom: 1rem;
+    }
+    .gpt3__admin-image img {
+        width: 100%;
+        height: 100%;
+    }
+    .gpt3__admin-rows-explain{
+        display: flex;
+        flex-direction: column;
+        justify-content:  flex-start;
+        width: 350px;
+    }
+}
+

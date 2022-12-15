@@ -99,7 +99,7 @@
     .gpt3__admin-rows-explain{
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content:  flex-start;
         width: 400px;
     }
     
@@ -153,7 +153,7 @@
     .gpt3__admin-rows-explain{
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        justify-content:  flex-start;
         width: 350px;
     }
 }

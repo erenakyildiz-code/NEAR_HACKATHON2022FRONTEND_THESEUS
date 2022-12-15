@@ -1,0 +1,17 @@
+.flexBoxLittleboxes{
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+    align-items:  flex-start;
+    justify-content: space-between;
+    font-size: 24px;
+}
+.littlebox{
+    width: auto;
+    height: 64px;
+    padding-right: 10px;
+}
+.Eren{
+  padding-left: 10px;
+  font-family: 'Manrope', sans-serif;
+}
